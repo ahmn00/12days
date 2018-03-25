@@ -109,15 +109,15 @@ time series models to forecast Uber demand in New York City. (Link to the dashbo
 https://amousavi.shinyapps.io/UBER/)
   """ )
 
-linkdin=Div(text= """My:<a href="https://www.linkedin.com/in/mousavi-amir/">Linkedin</a>""")  
-github= Div(text= """Project:<a href="https://github.com/ahmn00/12days.git">github</a>""")   
-tdi=Div(text= """More about The Data Incubator <a href="https://www.thedataincubator.com/">TDI</a>""")  
+#linkdin=Div(text= """My:<a href="https://www.linkedin.com/in/mousavi-amir/">Linkedin</a>""")  
+#github= Div(text= """Project:<a href="https://github.com/ahmn00/12days.git">github</a>""")   
+#tdi=Div(text= """More about The Data Incubator <a href="https://www.thedataincubator.com/">TDI</a>""")  
 #################### TABS : 
 
 col_1=column(ticker , button , stats)
 layout_1 = row (col_1,plot)
 
-layout_2=row( column(about_me_1 , about_me_2)  , column( widgetbox( linkdin )  , widgetbox(github) , tdi))
+layout_2=column(about_me_1 , about_me_2)   
 
 
 
